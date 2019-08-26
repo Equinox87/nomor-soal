@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aplikasi pemilihan nomor soal Lomba cerdas cermat PNB ITC 2019">
+    <meta name="author" content="Panitia PNB ITC 2019">
+    <title>LCC PNB ITC 2019</title>
+    <link rel="icon" href="../nomor-soal/img/favicon.ico">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .number {
+            display: block;
+            background: #610000;
+            ;
+            align-content: center;
+            margin: 8px;
+            border-radius: 10px;
+        }
+
+        .number span {
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+            font-weight: 800;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .number:hover {
+            background: #400000;
+        }
+
+        .number-open {
+            background: #df9d11;
+        }
+
+        .top-control {
+            position: fixed;
+            top: 0px;
+            display: inline-block;
+            width: 100%;
+            background: #610000;
+            padding: 0px;
+        }
+
+        .bottom-control {
+            position: fixed;
+            bottom: 0px;
+            display: inline-block;
+            width: 100%;
+            background: #610000;
+            padding: 8px;
+
+        }
+
+        .img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .tengah {
+            display: block;
+            text-align: center;
+            font-size: 200%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 60px;
+        }
+    </style>
+</head>
+
+<body id="my-body">
+    <div class="row">
+        <div class="col-md-12 col-lg-10 col-lg-offset-1" style="margin-top:100px;">
+            <div class="row" id="number-container"></div>
+        </div>
+    </div>
+    <div class="top-control">
+        <div class="row" id="form-setting">
+            <div class="col-xs-1 left text-center" id="">
+                <img src="img/my-logo.png" class='img'>
+            </div>
+            <div class="col-xs-1 text-center" id=""></div>
+            <div class="col-xs-1 pull-right text-center" id="">
+                <img src="img/pnb-it.png" class='img'>
+            </div>
+            <p class="tengah">PNB IT COMPETITION #12</p>
+        </div>
+    </div>
+
+    <!-- bottom -->
+
+    <body id="my-body">
+        <div class="row">
+            <div class="col-md-12 col-lg-10 col-lg-offset-1" style="margin-bottom:100px;">
+                <div class="row" id="number-container"></div>
+            </div>
+        </div>
+        <div class="bottom-control">
+            <div class="row" id="form-setting">
+
+                <div class="col-xs-1" id="btn-refresh-container">
+                    <button class="btn btn-warning" id="btn-refresh">
+                        <i class="fa fa-refresh fa-fw"> </i><span>Reset</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery -->
+        <script src="jquery/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="control/index.js"></script>
+    </body>
+
+</html>
